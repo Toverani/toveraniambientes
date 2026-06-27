@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forma & Madeira — Ambientes Planejados</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══════════════════════════════════
+       NAV
+  ══════════════════════════════════ -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#">Toverani</a>
+
+    <ul class="nav-center">
+      <li><a class="nav-link" href="#processo">Como funciona</a></li>
+      <li><a class="nav-link" href="#portfolio">Projetos</a></li>
+      <li><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+      <li><a class="nav-link" href="#sobre">Sobre</a></li>
+      <li><a class="nav-link" href="#localizacao">Localização</a></li>
+    </ul>
+
+    <a class="nav-wpp"
+       href="https://wa.me/62985638812?text=Oi!%20Quero%20um%20orçamento."
+       target="_blank">
+      Orçamento Grátis
+    </a>
+  </nav>
+
+  <!-- ══════════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Ambientes Planejados · Goiânia</p>
+
+      <h1 class="hero-headline">
+        SEU LAR<br>
+        <span>começa aqui.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Ambientes planejados que elevam cada espaço a uma nova experiência.
+        Do projeto à instalação, com a exclusividade que você merece.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-rust"
+           href="https://wa.me/62985638812?text=Oi!%20Quero%20agendar%20uma%20visita%20para%20orçamento%20sem%20compromisso."
+           target="_blank">
+          <!-- ícone WhatsApp inline (SVG não tem arquivo externo nesse contexto) -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Agendar Visita
+        </a>
+        <a class="btn-outline" href="#portfolio">Ver Projetos</a>
+      </div>
+
+      <div class="hero-stat-row">
+        <div><div class="hstat-n">12+</div><div class="hstat-l">Anos de mercado</div></div>
+        <div><div class="hstat-n">800+</div><div class="hstat-l">Projetos entregues</div></div>
+        <div><div class="hstat-n">4.9★</div><div class="hstat-l">Nota no Google</div></div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img src="logo-semfundo.png"
+           alt="Cozinha planejada de alto padrão" />
+      <div class="hero-overlay"></div>
+      <div class="hero-badge">
+        <p class="hero-badge-text">ORÇAMENTO SEM COMPROMISSO</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       PROOF STRIP (ticker)
+  ══════════════════════════════════ -->
+  <div class="proof-strip" aria-hidden="true">
+    <div class="proof-track">
+      <span class="proof-item"><span class="proof-dot"></span> Cozinhas <strong>Planejadas</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Home Office <strong>Personalizado</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Closets <strong>Modulados</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Dormitórios <strong>Completos</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Salas <strong>Integradas</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Projetos <strong>Comerciais</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Lavabos & <strong>Banheiros</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Instalação <strong>Inclusa</strong></span>
+      <!-- duplicado para loop infinito -->
+      <span class="proof-item"><span class="proof-dot"></span> Cozinhas <strong>Planejadas</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Home Office <strong>Personalizado</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Closets <strong>Modulados</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Dormitórios <strong>Completos</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Salas <strong>Integradas</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Projetos <strong>Comerciais</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Lavabos & <strong>Banheiros</strong></span>
+      <span class="proof-item"><span class="proof-dot"></span> Instalação <strong>Inclusa</strong></span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       PROCESSO
+  ══════════════════════════════════ -->
+  <section id="processo">
+    <div class="container">
+      <div class="proc-intro reveal">
+        <p class="sec-label">Como Funciona</p>
+        <h2 class="sec-title" style="color:var(--paper)">DO SONHO<br><em>à entrega</em></h2>
+        <p class="proc-sub">Sem burocracia. Sem susto no preço. Você vai saber exatamente o que acontece em cada etapa.</p>
+      </div>
+
+      <div class="proc-steps reveal">
+        <div class="proc-step">
+          <div class="proc-num">01</div>
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <div class="proc-name">Visita</div>
+          <div class="proc-desc">Vamos até você, medimos o espaço e entendemos o que você precisa.</div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">02</div>
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18M9 21V9"/>
+            </svg>
+          </div>
+          <div class="proc-name">Projeto</div>
+          <div class="proc-desc">Realizamos todo o projeto e te encaminhamos para aprovação antes de colocar a mão na massa.</div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">03</div>
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="proc-name">Produção</div>
+          <div class="proc-desc">Produção com tecnologia de precisão e matérias-primas selecionadas. Acabamento impecável em cada detalhe.</div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">04</div>
+          <div class="proc-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="proc-name">Instalação</div>
+          <div class="proc-desc">Nossa equipe instala e você só precisa aprovar. Prazo garantido em contrato. Sem obras no bolso.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       PORTFÓLIO
+  ══════════════════════════════════ -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="port-header reveal">
+        <div>
+          <p class="sec-label">Portfólio</p>
+          <h2 class="sec-title">PROJETOS<br><em>realizados</em></h2>
+        </div>
+        <div class="port-filter">
+          <button class="filt active" onclick="filterPort(this,'todos')">Todos</button>
+          <button class="filt" onclick="filterPort(this,'cozinha')">Cozinha</button>
+          <button class="filt" onclick="filterPort(this,'escritorio')">Escritório</button>
+          <button class="filt" onclick="filterPort(this,'closet')">Closet</button>
+        </div>
+      </div>
+
+      <div class="port-grid reveal" id="portGrid">
+        <div class="pc hero-card" data-cat="cozinha">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80" alt="Cozinha Planejada Premium" />
+          <div class="pc-info"><div class="pc-tag">Cozinha</div><div class="pc-name">Cozinha Planejada Premium</div></div>
+        </div>
+        <div class="pc tall" data-cat="escritorio">
+          <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80" alt="Home Office Minimalista" />
+          <div class="pc-info"><div class="pc-tag">Escritório</div><div class="pc-name">Home Office Minimalista</div></div>
+        </div>
+        <div class="pc" data-cat="closet">
+          <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80" alt="Closet Modulado" />
+          <div class="pc-info"><div class="pc-tag">Closet</div><div class="pc-name">Closet Modulado</div></div>
+        </div>
+        <div class="pc wide" data-cat="sala">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" alt="Painel TV e Estante" />
+          <div class="pc-info"><div class="pc-tag">Sala</div><div class="pc-name">Painel TV &amp; Estante Integrada</div></div>
+        </div>
+        <div class="pc" data-cat="cozinha">
+          <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&q=80" alt="Dormitório Casal" />
+          <div class="pc-info"><div class="pc-tag">Dormitório</div><div class="pc-name">Quarto Casal Completo</div></div>
+        </div>
+        <div class="pc" data-cat="escritorio">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Lavabo Planejado" />
+          <div class="pc-info"><div class="pc-tag">Lavabo</div><div class="pc-name">Lavabo Planejado</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       DEPOIMENTOS
+  ══════════════════════════════════ -->
+  <section id="depoimentos">
+    <div class="container">
+      <div class="dep-layout">
+
+        <div class="dep-left reveal-left">
+          <p class="sec-label">Depoimentos</p>
+          <h2 class="sec-title">QUEM JÁ<br><em>transformou</em></h2>
+          <p class="dep-summary">Mais de 800 famílias em Goiânia confiaram em nós para transformar o espaço onde vivem.</p>
+          <div class="dep-rating">
+            <div>
+              <div class="dep-rnum">4.9</div>
+              <div class="dep-rlabel">Nota no Google</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:2px">
+              <div class="dep-stars">★★★★★</div>
+              <div style="font-size:12px;color:var(--muted)">+120 avaliações</div>
+            </div>
+          </div>
+          <div class="dep-nav">
+            <button class="dep-btn" id="depPrev" aria-label="Depoimento anterior">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="dep-btn" id="depNext" aria-label="Próximo depoimento">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="dep-slider reveal-right">
+          <div class="dep-track" id="depTrack">
+
+            <div class="dep-card">
+              <div class="dep-quote-mark">"</div>
+              <p class="dep-text">A cozinha ficou exatamente como eu sonhava. Eles trouxeram o projeto 3D antes de começar e não teve nenhuma surpresa. Prazo cumprido, equipe educada. Recomendo de olhos fechados.</p>
+              <div class="dep-bottom">
+                <div class="dep-avatar" style="background:var(--rust)">M</div>
+                <div>
+                  <div class="dep-author">Mariana Costa</div>
+                  <div class="dep-where">Setor Bueno · Goiânia</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dep-card">
+              <div class="dep-quote-mark">"</div>
+              <p class="dep-text">Meu home office ficou incrível. Eles aproveitaram cada centímetro do espaço. O material é de altíssima qualidade e o atendimento foi impecável do início ao fim.</p>
+              <div class="dep-bottom">
+                <div class="dep-avatar" style="background:var(--green)">R</div>
+                <div>
+                  <div class="dep-author">Rafael Mendonça</div>
+                  <div class="dep-where">Jardim Goiás · Goiânia</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dep-card">
+              <div class="dep-quote-mark">"</div>
+              <p class="dep-text">Fizemos o closet e o quarto completo. O diferencial foi o projeto 3D — a gente conseguiu visualizar tudo antes. Resultado final superou as expectativas.</p>
+              <div class="dep-bottom">
+                <div class="dep-avatar" style="background:#7A5C36">F</div>
+                <div>
+                  <div class="dep-author">Fernanda &amp; Lucas</div>
+                  <div class="dep-where">Residencial Alphaville · Goiânia</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dep-card">
+              <div class="dep-quote-mark">"</div>
+              <p class="dep-text">Já é o segundo apartamento que faço com eles. A qualidade e o cuidado com os detalhes são os mesmos. Empresa séria, preço justo, entrega no prazo.</p>
+              <div class="dep-bottom">
+                <div class="dep-avatar" style="background:var(--rust-light)">C</div>
+                <div>
+                  <div class="dep-author">Carlos Henrique</div>
+                  <div class="dep-where">Setor Marista · Goiânia</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SOBRE
+  ══════════════════════════════════ -->
+  <section id="sobre">
+    <div class="sobre-grid">
+      <div class="sobre-visual reveal-left">
+        <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=900&q=80"
+             alt="Nosso ateliê" />
+        <div class="sobre-tape">DESDE xxxx</div>
+      </div>
+
+      <div class="sobre-body reveal-right">
+        <p class="sec-label">Sobre Nós</p>
+        <h2 class="sec-title">FEITO COM<br><em>cuidado.</em></h2>
+        <p class="sobre-p">A Toverani nasceu em Goiânia com um propósito claro: criar ambientes planejados que as pessoas amam e que duram décadas. Unimos tecnologia de precisão a um acabamento verdadeiramente artesanal.</p>
+        <p class="sobre-p">Cada projeto começa com escuta. Entendemos sua rotina, seus hábitos, seu gosto. Só depois desenhamos.</p>
+
+        <div class="sobre-values">
+          <div class="val-item">
+            <div class="val-num">01</div>
+            <div class="val-content">
+              <div class="val-title">Prazo é compromisso</div>
+              <div class="val-text">Tudo em contrato. Se atrasar, tem compensação. Simples assim.</div>
+            </div>
+          </div>
+          <div class="val-item">
+            <div class="val-num">02</div>
+            <div class="val-content">
+              <div class="val-title">Sem letra miúda</div>
+              <div class="val-text">Orçamento detalhado, sem surpresas no meio do caminho.</div>
+            </div>
+          </div>
+          <div class="val-item">
+            <div class="val-num">03</div>
+            <div class="val-content">
+              <div class="val-title">Garantia real</div>
+              <div class="val-text">Garantia em estruturas e ferragens. Não somos o mais barato — somos o que vale mais.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       CTA STRIP
+  ══════════════════════════════════ -->
+  <div class="cta-strip">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-text">
+          <h2 class="cta-title">PRONTO PARA<br>COMEÇAR?</h2>
+          <p class="cta-subtitle">Agende uma visita. Em 3 dias você já tem o projeto do seu espaço.</p>
+        </div>
+        <a class="btn-white"
+           href="https://wa.me/62985638812?text=Oi!%20Vi%20o%20site%20e%20quero%20agendar%20uma%20visita%20gratuita."
+           target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A04E" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Agendar Pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       LOCALIZAÇÃO
+  ══════════════════════════════════ -->
+  <section id="localizacao">
+    <div class="container">
+      <p class="sec-label reveal">Localização</p>
+      <h2 class="sec-title reveal" style="color:var(--paper)">VENHA NOS<br><em>visitar</em></h2>
+      <div style="height:56px"></div>
+
+      <div class="loc-grid">
+        <div class="loc-map reveal-left">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30642!2d-49.2532!3d-16.6869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1e5f4c2c7b3%3A0x4f6b22e3d4c11a4e!2sSetor+Bueno%2C+Goi%C3%A2nia!5e0!3m2!1spt-BR!2sbr!4v1"
+            loading="lazy"
+            allowfullscreen
+            title="Localização Forma & Madeira">
+          </iframe>
+        </div>
+
+        <div class="loc-infos reveal-right">
+          <div class="loc-block">
+            <div class="loc-block-label">Endereço</div>
+            <div class="loc-block-val">
+              <strong>Av. Vila Boa, QD 57, LT 04</strong><br>
+              Bairro Goiá · Goiânia, GO<br>
+              CEP 74.485-520
+            </div>
+          </div>
+          <div class="loc-divider"></div>
+          <div class="loc-block">
+            <div class="loc-block-label">Horário de Atendimento</div>
+            <div class="loc-block-val">
+              <strong>Seg a Sex:</strong> 08h às 18h<br>
+              <strong>Sábado:</strong> 08h às 13h<br>
+              <strong>Visitas em domicílio:</strong> com agendamento
+            </div>
+          </div>
+          <div class="loc-divider"></div>
+          <div class="loc-block">
+            <div class="loc-block-label">Contato direto</div>
+            <div class="loc-block-val"><strong>(62) 9 8563-8812</strong></div>
+          </div>
+          <a class="loc-cta"
+             href="https://wa.me/62985638812?text=Oi!%20Quero%20agendar%20uma%20visita."
+             target="_blank">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Falar no WhatsApp Agora
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="ft-top">
+        <div>
+          <span class="ft-logo">Toverani</span>
+          <p class="ft-tagline">Ambientes planejados de linha premium em Goiânia. Seu espaço, em outro nível.</p>
+        </div>
+        <div>
+          <p class="ft-col-t">Navegação</p>
+          <ul class="ft-links">
+            <li><a href="#processo">Como funciona</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="ft-col-t">Serviços</p>
+          <ul class="ft-links">
+            <li><a href="#">Cozinhas</a></li>
+            <li><a href="#">Home Office</a></li>
+            <li><a href="#">Closets</a></li>
+            <li><a href="#">Dormitórios</a></li>
+            <li><a href="#">Comercial</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="ft-col-t">Contato</p>
+          <ul class="ft-links">
+            <li><a href="https://wa.me/62985638812" target="_blank">(62) 9 8563-8812</a></li>
+            <li><a href="mailto:contato@formamadeira.com.br">toveraniambientes@gmail.com</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft-bottom">
+        <span>© 2026 Toverani Ambientes Planejados</span>
+        <span>Goiânia · Goiás · Brasil</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════
+       WHATSAPP FLUTUANTE
+  ══════════════════════════════════ -->
+  <a class="wpp-float"
+     href="https://wa.me/62985638812?text=Oi!%20Quero%20um%20orçamento%20de%20ambientes%20planejados."
+     target="_blank"
+     title="Falar no WhatsApp">
+    <div class="wpp-pill">Solicitar orçamento</div>
+    <div class="wpp-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </div>
+  </a>
+
+  <!-- Script no final do body — carrega após o DOM -->
+  <script src="main.js"></script>
+</body>
+</html>
